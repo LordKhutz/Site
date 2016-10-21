@@ -11,7 +11,7 @@ namespace WebApplication2
         protected void Page_Load(object sender, EventArgs e)
         {
             DataTable myInfo = new DataTable();
-            getComanyInfo.connDB("C:/Users/khuth/OneDrive/Documents/FleetDB.mdb");
+            getComanyInfo.connDB("|DataDirectory|/FleetDB.mdb");
             getComanyInfo.Query = "SELECT * FROM CompanyInfo;";
             myInfo = getComanyInfo.db_select();
             Session["Addr"] = myInfo.Rows[0].ItemArray[2].ToString();

@@ -40,18 +40,14 @@ namespace LibSite
             return (false);
         }
         //change password, only accessible to the currently logged on Manager.
-        public bool changePassKey(string passKey)
+        public void changePassKey(string passKey)
         {
             command.Parameters.Add("@UserName", OleDbType.VarChar);
             command.Parameters.Add("@PassKey", OleDbType.VarChar);
-            command.Parameters["@UserName"].Value = userName;
+            command.Parameters["@UserName"].Value = "khuthadzotshikotshi@gmail.com";
             command.Parameters["@PassKey"].Value = passKey;
-            Query = "UPDATE Managers SET passKey=@PassKey WHERE userName=@UserName";
-            if (db_non_returning_query() == 1)
-            {
-                return (true);
-            }
-            return (false);
+            Query = "UPDATE Managers SET passKey=@PassKey WHERE (userName=@UserName);";
+            db_select();
         }
         //only accessible to the office Manager
         //add a new employee to the system.

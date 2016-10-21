@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 14 for Web
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication2", "WebApplication2\WebApplication2.csproj", "{F857BDB6-E90D-4B32-94AE-CB9F5665BAF9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Site", "WebApplication2\Site.csproj", "{F857BDB6-E90D-4B32-94AE-CB9F5665BAF9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibSite", "LibSite\LibSite.csproj", "{8C547847-0718-4B62-A8D8-2D2B52F8D405}"
 EndProject

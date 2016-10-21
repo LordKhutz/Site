@@ -32,7 +32,7 @@
         <div style="position: static; width: 12%; height: 100%; float: right; text-align: right; left: -20%;" aria-checked="undefined">
             <a href="addManager.aspx" style="text-align: right;">New Manager</a>
         </div>
-        <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="C:\Users\khuth\OneDrive\Documents\FleetDB.mdb" DeleteCommand="DELETE FROM `Managers` WHERE `ID` = ?" InsertCommand="INSERT INTO `Managers` (`ID`, `userName`, `passKey`, `userType`, `empName`, `surname`, `address`, `phnumber`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)" SelectCommand="SELECT `ID`, `userName`, `passKey`, `userType`, `empName`, `surname`, `address`, `phnumber` FROM `Managers`" UpdateCommand="UPDATE `Managers` SET `userName` = ?, `passKey` = ?, `userType` = ?, `empName` = ?, `surname` = ?, `address` = ?, `phnumber` = ? WHERE `ID` = ?">
+        <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/FleetDB.mdb" DeleteCommand="DELETE FROM `Managers` WHERE `ID` = ?" InsertCommand="INSERT INTO `Managers` (`ID`, `userName`, `passKey`, `userType`, `empName`, `surname`, `address`, `phnumber`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)" SelectCommand="SELECT `ID`, `userName`, `passKey`, `userType`, `empName`, `surname`, `address`, `phnumber` FROM `Managers`" UpdateCommand="UPDATE `Managers` SET `userName` = ?, `passKey` = ?, `userType` = ?, `empName` = ?, `surname` = ?, `address` = ?, `phnumber` = ? WHERE `ID` = ?">
             <DeleteParameters>
                 <asp:Parameter Name="ID" Type="Int32" />
             </DeleteParameters>

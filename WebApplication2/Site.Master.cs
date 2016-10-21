@@ -13,7 +13,7 @@ namespace WebApplication2
         {
             DataTable myInfo = new DataTable();
             int idx;
-            getComanyInfo.connDB("C:/Users/khuth/OneDrive/Documents/FleetDB.mdb");
+            getComanyInfo.connDB("|DataDirectory|/FleetDB.mdb");
             getComanyInfo.Query = "SELECT * FROM CompanyInfo;";
             myInfo = getComanyInfo.db_select();
             Session["AppName"] = myInfo.Rows[0].ItemArray[0];
