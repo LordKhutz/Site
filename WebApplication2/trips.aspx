@@ -42,7 +42,7 @@
                 </asp:DropDownList>
         </div>
         <div style="clear:both">
-            <asp:Button ID="newTrip" runat="server" Text="Save Trip"/>
+            <asp:Button ID="newTrip" runat="server" Text="Save Trip" OnClick="newTrip_Click"/>
         </div>
     </div>
         <asp:AccessDataSource ID="AccessDataSource2" runat="server" DataFile="App_Data\FleetDB.mdb" SelectCommand="SELECT `driverID` FROM `Trip`"></asp:AccessDataSource>

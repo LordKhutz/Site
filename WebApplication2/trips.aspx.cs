@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using LibSite;
+using System.Data.OleDb;
 
 namespace WebApplication2
 {
     public partial class trips : System.Web.UI.Page
     {
+        clsDB newCon = new clsDB();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -18,5 +16,10 @@ namespace WebApplication2
         {
 
         }
+
+        protected void newTrip_Click(object sender, EventArgs e)
+        {
+            newCon.connDB(Session["db"].ToString());
+            newCon.Query = "INSERT INTO Trip ";
     }
 }
