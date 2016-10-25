@@ -29,6 +29,6 @@
         </div>
         <br />
         <p>
-            Please not, all information is required<br/>Information Entered Here can be changed at a later stage but, please be as accurate as possible.0</p>
+            Please not, all information is required<br/>Information Entered Here can be changed at a later stage but, please be as accurate as possible.</p>
     </div>
 </asp:Content>
