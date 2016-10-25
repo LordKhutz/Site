@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManageEmployees.aspx.cs" Inherits="WebApplication2.ManageEmployees" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="jumbotron">
+    <div class="jumbotron" style="font-size:100%">
+        <div div style="position: static; width: 80%; height: 100%; left: 10%; float: left; clear: both; display: table;">
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="ID" DataSourceID="AccessDataSource1" EmptyDataText="There are no data records to display." ForeColor="#333333" GridLines="None">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
@@ -44,4 +45,8 @@
         </UpdateParameters>
     </asp:AccessDataSource>
    </div>
+        <div style="position: static; width: 12%; height: 100%; float: right; text-align: right; left: -20%;" aria-checked="undefined">
+            <a href="addEmployees.aspx" style="text-align: right;">New Employee</a>
+        </div>
+        </div>
 </asp:Content>

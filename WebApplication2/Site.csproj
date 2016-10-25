@@ -160,6 +160,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="tripManagement.aspx" />
     <Content Include="trips.aspx" />
     <Content Include="UserManagement.aspx" />
     <Content Include="favicon.ico" />
@@ -233,6 +234,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="tripManagement.aspx.cs">
+      <DependentUpon>tripManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tripManagement.aspx.designer.cs">
+      <DependentUpon>tripManagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="trips.aspx.cs">
       <DependentUpon>trips.aspx</DependentUpon>

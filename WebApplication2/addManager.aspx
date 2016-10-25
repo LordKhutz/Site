@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="New Manager" Language="C#" AutoEventWireup="true" CodeBehind="addManager.aspx.cs" MasterPageFile="~/Site.Master" Inherits="WebApplication2.addManger" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2 style="text-align: center;">New Manager</h2><br />
     <div class="jumbotron">
+        <h1 style="position:center">New Manager</h1>
             <div style="width: 65%; padding: 10px; position: relative; background-color: darkgray; box-shadow: 10px 10px 20px #a9bebe; left: 17.5%;height: 366px">
                 <div style ="width:49%; float:left; position:relative; clear:both;">
                     Name:<br />
