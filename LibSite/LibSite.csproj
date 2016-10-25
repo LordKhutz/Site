@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsDB.cs" />
-    <Compile Include="clsMisc.cs" />
     <Compile Include="clsUserManagement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

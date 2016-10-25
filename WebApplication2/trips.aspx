@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="trips.aspx.cs" Inherits="WebApplication2.trips" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="jumbotron">
     <div>
         &nbsp;
         <asp:Label ID="Label1" runat="server" Text="Vehicle Number"></asp:Label>
@@ -45,4 +46,5 @@
         <br />
         <br />
     </div>
+        </div>
 </asp:Content>

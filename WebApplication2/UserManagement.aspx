@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="User Management" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UserManagement.aspx.cs" Inherits="WebApplication2._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+    <div class="jumbotron">
     <div class="row" style="position: inherit; width: 100%; height: 100%;">
         <h2 style="text-align: center;">USERS</h2><br />
         <div style="position: static; width: 80%; height: 100%; left: 10%; float: left; clear: both; display: table;">
@@ -59,5 +59,5 @@
         </asp:AccessDataSource>
         <br />
     </div>
-
+        </div>
 </asp:Content>

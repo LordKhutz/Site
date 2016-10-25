@@ -47,6 +47,7 @@ namespace WebApplication2
             if (isValid())
             {
                 clsUserManagement newSignIn = new clsUserManagement();
+                Session["db"] = "|DataDirectory|/FleetDB.mdb";
                 newSignIn.connDB("|DataDirectory|/FleetDB.mdb");
                 if (newSignIn.Login(txtEmail.Text,txtPassCode.Text))
                 {
