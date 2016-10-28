@@ -112,6 +112,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="VehicleStatus.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
@@ -128,6 +129,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="ChangePass.aspx" />
+    <Content Include="FleetDBDataSet.xsc">
+      <DependentUpon>FleetDBDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="FleetDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FleetDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="FleetDBDataSet.xss">
+      <DependentUpon>FleetDBDataSet.xsd</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Login.aspx" />
     <Content Include="ManageEmployees.aspx" />
@@ -216,6 +228,11 @@
     </Compile>
     <Compile Include="addEmployees.aspx.designer.cs">
       <DependentUpon>addEmployees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FleetDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FleetDBDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
