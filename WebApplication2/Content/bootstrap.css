@@ -4951,6 +4951,7 @@ a.list-group-item.active > .badge,
 
 .container .jumbotron {
   border-radius: 6px;
+    height: 499px;
 }
 
 @media screen and (min-width: 768px) {

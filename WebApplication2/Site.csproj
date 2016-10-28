@@ -160,6 +160,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="timeSheet.aspx" />
     <Content Include="tripManagement.aspx" />
     <Content Include="trips.aspx" />
     <Content Include="UserManagement.aspx" />
@@ -234,6 +235,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="timeSheet.aspx.cs">
+      <DependentUpon>timeSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="timeSheet.aspx.designer.cs">
+      <DependentUpon>timeSheet.aspx</DependentUpon>
     </Compile>
     <Compile Include="tripManagement.aspx.cs">
       <DependentUpon>tripManagement.aspx</DependentUpon>
