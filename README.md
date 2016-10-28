@@ -5,6 +5,4 @@
 #-----------------------------TODO---------------------------
 #*hash the user password for safety.
 #*add the reporting functionality.
-#*Improve the application ui.
-#*add functionality to add none Application using Employees.
 #*make use of the quick access page.
