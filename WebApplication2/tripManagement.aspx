@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="tripManagement.aspx.cs" Inherits="WebApplication2.tripManagement" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="jumbotron" style="font-size:100%">
-          <div style="position: static; width: 80%; height: 100%; left: 10%; float: left; clear: both; display: table;">
+    <div class="jumbotron" style="font-size: 100%">
+        <a href="trips.aspx" style="text-align: right;">New Trip</a>
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="ID" DataSourceID="AccessDataSource1" EmptyDataText="There are no data records to display." ForeColor="Black" GridLines="Horizontal">
             <Columns>
                 <asp:CommandField ShowEditButton="True" />
@@ -56,9 +56,5 @@
                 <asp:Parameter Name="ID" Type="Int32" />
             </UpdateParameters>
         </asp:AccessDataSource>
-              </div>
-        <div style="position: static; width: 12%; height: 100%; float: right; text-align: right; left: -20%;" aria-checked="undefined">
-            <a href="trips.aspx" style="text-align: right;">New Trip</a>
-        </div>
     </div>
 </asp:Content>
