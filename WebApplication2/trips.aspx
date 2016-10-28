@@ -6,36 +6,36 @@
             <div style ="width:49%; float:left; position:relative; clear:both;">
                 <asp:Label ID="Label1" runat="server" Text="Vehicle Number"></asp:Label>
                 <br />
-                <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" DataSourceID="AccessDataSource1" DataTextField="vehicleNumber">
+                <asp:DropDownList ID="cbxVehicle" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" DataSourceID="AccessDataSource1" DataTextField="vehicleNumber">
                 </asp:DropDownList>
                 <br />
                 Driver<br />
-                <asp:DropDownList ID="DropDownList3" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" DataSourceID="AccessDataSource2" DataTextField="driverID">
+                <asp:DropDownList ID="cbxDriver" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" DataSourceID="AccessDataSource2" DataTextField="driverID">
                 </asp:DropDownList>
                 <br />
                 <asp:Label ID="Label2" runat="server" Text="Destination"></asp:Label>
                 <br />
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtDest" runat="server"></asp:TextBox>
                 <br />
                 Origin<br />
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtOrigin" runat="server"></asp:TextBox>
                 <br />
                 start date<br />
-                <asp:TextBox ID="TextBox3" runat="server" TextMode="Date"></asp:TextBox>
+                <asp:TextBox ID="dtStart" runat="server" TextMode="Date"></asp:TextBox>
                 <br />
                 
         </div>
         <div style ="width:49%; float:right; position:relative; height: 231px; top: 3px; left: -3px;">
             expacted end date<br />
-             <asp:TextBox ID="TextBox4" runat="server" TextMode="Date"></asp:TextBox><br />    
+             <asp:TextBox ID="dtEnd" runat="server" TextMode="Date"></asp:TextBox><br />    
             expacted fuel usage<br />
-                <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtFuel" runat="server"></asp:TextBox>
                 <br />
                 milage before trip<br />
-                <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtMilageBefore" runat="server"></asp:TextBox>
                 <br />
                 trip status<br />
-                <asp:DropDownList ID="DropDownList2" runat="server">
+                <asp:DropDownList ID="cbxTripStatus" runat="server">
                 <asp:ListItem>Upcoming</asp:ListItem>
                 <asp:ListItem>In progress</asp:ListItem>
                 <asp:ListItem>Complete</asp:ListItem>
