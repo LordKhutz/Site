@@ -22,7 +22,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>0.17639cm</Top>
-        <Left>1.37266cm</Left>
+        <Left>0.41197cm</Left>
         <Height>0.92314cm</Height>
         <Width>5.01354cm</Width>
         <Style>
@@ -55,7 +55,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox3</rd:DefaultName>
         <Top>1.60196cm</Top>
-        <Left>1.37266cm</Left>
+        <Left>0.41197cm</Left>
         <Height>0.6cm</Height>
         <Width>2.97625cm</Width>
         <ZIndex>1</ZIndex>
@@ -88,7 +88,7 @@
         </Paragraphs>
         <rd:DefaultName>vehicleNumber</rd:DefaultName>
         <Top>1.60196cm</Top>
-        <Left>4.67995cm</Left>
+        <Left>3.71926cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>2</ZIndex>
@@ -105,7 +105,7 @@
       <Line Name="Line1">
         <Top>2.52828cm</Top>
         <Height>0cm</Height>
-        <Width>23.94479cm</Width>
+        <Width>21cm</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -131,7 +131,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox6</rd:DefaultName>
         <Top>2.77495cm</Top>
-        <Left>1.37266cm</Left>
+        <Left>0.41197cm</Left>
         <Height>0.6cm</Height>
         <Width>2.15604cm</Width>
         <ZIndex>4</ZIndex>
@@ -163,7 +163,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox6</rd:DefaultName>
         <Top>2.77495cm</Top>
-        <Left>4.25662cm</Left>
+        <Left>2.7444cm</Left>
         <Height>0.6cm</Height>
         <Width>2.12958cm</Width>
         <ZIndex>5</ZIndex>
@@ -195,7 +195,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox6</rd:DefaultName>
         <Top>2.77495cm</Top>
-        <Left>6.89917cm</Left>
+        <Left>5.05037cm</Left>
         <Height>0.6cm</Height>
         <Width>2.12958cm</Width>
         <ZIndex>6</ZIndex>
@@ -227,7 +227,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox6</rd:DefaultName>
         <Top>2.77495cm</Top>
-        <Left>9.49208cm</Left>
+        <Left>7.35634cm</Left>
         <Height>0.6cm</Height>
         <Width>1.99729cm</Width>
         <ZIndex>7</ZIndex>
@@ -259,7 +259,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox6</rd:DefaultName>
         <Top>2.77495cm</Top>
-        <Left>17.42958cm</Left>
+        <Left>13.87738cm</Left>
         <Height>0.6cm</Height>
         <Width>1.99729cm</Width>
         <ZIndex>8</ZIndex>
@@ -291,7 +291,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox6</rd:DefaultName>
         <Top>2.77495cm</Top>
-        <Left>14.91604cm</Left>
+        <Left>11.7037cm</Left>
         <Height>0.6cm</Height>
         <Width>1.99729cm</Width>
         <ZIndex>9</ZIndex>
@@ -323,7 +323,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox6</rd:DefaultName>
         <Top>2.77495cm</Top>
-        <Left>12.21729cm</Left>
+        <Left>9.53002cm</Left>
         <Height>0.6cm</Height>
         <Width>1.99729cm</Width>
         <ZIndex>10</ZIndex>
@@ -355,7 +355,7 @@
         </Paragraphs>
         <rd:DefaultName>registration_numb</rd:DefaultName>
         <Top>3.70099cm</Top>
-        <Left>1.37266cm</Left>
+        <Left>0.41197cm</Left>
         <Height>0.6cm</Height>
         <Width>2.15604cm</Width>
         <ZIndex>11</ZIndex>
@@ -387,7 +387,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox6</rd:DefaultName>
         <Top>2.77495cm</Top>
-        <Left>19.94312cm</Left>
+        <Left>16.05106cm</Left>
         <Height>0.6cm</Height>
         <Width>2.47354cm</Width>
         <ZIndex>12</ZIndex>
@@ -419,7 +419,7 @@
         </Paragraphs>
         <rd:DefaultName>make</rd:DefaultName>
         <Top>3.70099cm</Top>
-        <Left>4.25662cm</Left>
+        <Left>2.7444cm</Left>
         <Height>0.6cm</Height>
         <Width>2.12958cm</Width>
         <ZIndex>13</ZIndex>
@@ -451,7 +451,7 @@
         </Paragraphs>
         <rd:DefaultName>type</rd:DefaultName>
         <Top>3.70099cm</Top>
-        <Left>6.89917cm</Left>
+        <Left>5.05037cm</Left>
         <Height>0.6cm</Height>
         <Width>2.12958cm</Width>
         <ZIndex>14</ZIndex>
@@ -483,7 +483,7 @@
         </Paragraphs>
         <rd:DefaultName>model</rd:DefaultName>
         <Top>3.70099cm</Top>
-        <Left>9.49208cm</Left>
+        <Left>7.35634cm</Left>
         <Height>0.6cm</Height>
         <Width>1.99729cm</Width>
         <ZIndex>15</ZIndex>
@@ -515,7 +515,7 @@
         </Paragraphs>
         <rd:DefaultName>manufacturer</rd:DefaultName>
         <Top>3.70099cm</Top>
-        <Left>12.21729cm</Left>
+        <Left>9.53002cm</Left>
         <Height>0.6cm</Height>
         <Width>1.99729cm</Width>
         <ZIndex>16</ZIndex>
@@ -546,8 +546,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>engine_size</rd:DefaultName>
-        <Top>3.72745cm</Top>
-        <Left>14.91604cm</Left>
+        <Top>3.70099cm</Top>
+        <Left>11.7037cm</Left>
         <Height>0.6cm</Height>
         <Width>1.99729cm</Width>
         <ZIndex>17</ZIndex>
@@ -578,8 +578,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>milege</rd:DefaultName>
-        <Top>3.72745cm</Top>
-        <Left>17.42958cm</Left>
+        <Top>3.70099cm</Top>
+        <Left>13.87738cm</Left>
         <Height>0.6cm</Height>
         <Width>1.99729cm</Width>
         <ZIndex>18</ZIndex>
@@ -611,7 +611,7 @@
         </Paragraphs>
         <rd:DefaultName>next_serviceMilage</rd:DefaultName>
         <Top>3.70099cm</Top>
-        <Left>19.94312cm</Left>
+        <Left>16.05106cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>19</ZIndex>
@@ -626,13 +626,15 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>2.69in</Height>
-    <Style />
+    <Height>29.7cm</Height>
+    <Style>
+      <BackgroundColor>White</BackgroundColor>
+    </Style>
   </Body>
-  <Width>9.42708in</Width>
+  <Width>21cm</Width>
   <Page>
     <PageHeader>
-      <Height>4.39552cm</Height>
+      <Height>5.48031cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -659,7 +661,7 @@
           <Top>1.05516cm</Top>
           <Left>5.73016cm</Left>
           <Height>1.60542cm</Height>
-          <Width>18.21463cm</Width>
+          <Width>13.69672cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -688,6 +690,7 @@
         <Border>
           <Style>None</Style>
         </Border>
+        <BackgroundColor>White</BackgroundColor>
       </Style>
     </PageHeader>
     <PageFooter>
@@ -713,7 +716,7 @@
           </Paragraphs>
           <rd:DefaultName>Address</rd:DefaultName>
           <Top>1.35115cm</Top>
-          <Left>18.35891cm</Left>
+          <Left>14.33536cm</Left>
           <Height>2.15278cm</Height>
           <Width>4.69604cm</Width>
           <Style>
@@ -744,7 +747,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox29</rd:DefaultName>
           <Top>0.57476cm</Top>
-          <Left>18.35891cm</Left>
+          <Left>14.33536cm</Left>
           <Height>0.6cm</Height>
           <Width>2.5cm</Width>
           <ZIndex>1</ZIndex>
@@ -886,11 +889,22 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
+        <Line Name="Line2">
+          <Height>0cm</Height>
+          <Width>21cm</Width>
+          <ZIndex>6</ZIndex>
+          <Style>
+            <Border>
+              <Style>Solid</Style>
+            </Border>
+          </Style>
+        </Line>
       </ReportItems>
       <Style>
         <Border>
           <Style>None</Style>
         </Border>
+        <BackgroundColor>White</BackgroundColor>
       </Style>
     </PageFooter>
     <PageHeight>29.7cm</PageHeight>
