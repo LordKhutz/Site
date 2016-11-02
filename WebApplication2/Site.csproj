@@ -115,6 +115,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="rptPlannedTrips.rdlc" />
+    <EmbeddedResource Include="rptService.rdlc" />
     <EmbeddedResource Include="rptVehicleStatus.rdlc" />
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +154,17 @@
     </None>
     <Content Include="FleetDBDataSet1.xss">
       <DependentUpon>FleetDBDataSet1.xsd</DependentUpon>
+    </Content>
+    <Content Include="FleetDBDataSet_.xsc">
+      <DependentUpon>FleetDBDataSet_.xsd</DependentUpon>
+    </Content>
+    <None Include="FleetDBDataSet_.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FleetDBDataSet_.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="FleetDBDataSet_.xss">
+      <DependentUpon>FleetDBDataSet_.xsd</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Login.aspx" />
@@ -253,6 +265,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FleetDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FleetDBDataSet_.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FleetDBDataSet_.xsd</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

@@ -3,13 +3,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron">
         <rsweb:ReportViewer ID="ReportViewer1" runat="server" Width="100%" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Height="90%">
-            <LocalReport ReportPath="VehicleStatus.rdlc">
+            <LocalReport ReportPath="rptVehicleStatus.rdlc">
                 <DataSources>
-                    <rsweb:ReportDataSource DataSourceId="ObjectDataSource1" Name="DataSet1" />
-                    <rsweb:ReportDataSource DataSourceId="ObjectDataSource2" Name="DataSet2" />
+                    <rsweb:ReportDataSource DataSourceId="ObjectDataSource3" Name="DataSet1" />
+                    <rsweb:ReportDataSource DataSourceId="ObjectDataSource4" Name="DataSet2" />
                 </DataSources>
             </LocalReport>
         </rsweb:ReportViewer>
+        <asp:ObjectDataSource ID="ObjectDataSource4" runat="server" SelectMethod="GetData" TypeName="Site.FleetDBDataSet1TableAdapters.CompanyInfoTableAdapter"></asp:ObjectDataSource>
+        <asp:ObjectDataSource ID="ObjectDataSource3" runat="server" SelectMethod="GetData" TypeName="Site.FleetDBDataSetTableAdapters.VehiclesTableAdapter"></asp:ObjectDataSource>
         <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" SelectMethod="GetData" TypeName="WebApplication2.FleetDBDataSet1TableAdapters.CompanyInfoTableAdapter" InsertMethod="Insert" OldValuesParameterFormatString="original_{0}">
             <InsertParameters>
                 <asp:Parameter Name="CompName" Type="String" />
