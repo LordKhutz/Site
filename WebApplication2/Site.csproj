@@ -109,13 +109,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="rptCompleteServices.rdlc" />
     <EmbeddedResource Include="rptcompleteTrips.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="rptPlannedService.rdlc" />
     <EmbeddedResource Include="rptPlannedTrips.rdlc" />
     <EmbeddedResource Include="rptService.rdlc" />
+    <EmbeddedResource Include="rptSpecificService.rdlc" />
+    <EmbeddedResource Include="rptTimeSheet.rdlc" />
     <EmbeddedResource Include="rptVehicleStatus.rdlc" />
   </ItemGroup>
   <ItemGroup>
