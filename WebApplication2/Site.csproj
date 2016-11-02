@@ -109,13 +109,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="completeTrips.rdlc" />
+    <EmbeddedResource Include="rptcompleteTrips.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report2.rdlc" />
-    <EmbeddedResource Include="VehicleStatus.rdlc" />
+    <EmbeddedResource Include="rptPlannedTrips.rdlc" />
+    <EmbeddedResource Include="rptVehicleStatus.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
