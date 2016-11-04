@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron" style="font-size: 100%;">
             <a href="addEmployees.aspx" style="text-align: right;">New Employee</a> | 
-            <a href="timeSheet.aspx" style="text-align: right;">Employee Time-Sheets</a>
+            <a href="reportView.aspx" style="text-align: right;">Employee Time-Sheets</a>
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="ID" DataSourceID="AccessDataSource1" EmptyDataText="There are no data records to display." ForeColor="Black" GridLines="Horizontal" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px">
                 <Columns>
                     <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />

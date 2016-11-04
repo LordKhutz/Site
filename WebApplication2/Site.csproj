@@ -109,7 +109,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="rptCompleteServices.rdlc" />
     <EmbeddedResource Include="rptcompleteTrips.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
