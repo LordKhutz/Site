@@ -613,7 +613,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>a59acf41-2382-4047-b348-f8a99aa27c25</rd:DataSourceID>
+      <rd:DataSourceID>4a061700-1f79-4204-9da5-7c85c2a4900d</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -657,8 +657,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>FleetDBDataSet_</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\khuth\OneDrive\Documents\Site\WebApplication2\FleetDBDataSet_.xsd</rd:SchemaPath>
+        <rd:DataSetName>FleetDBDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\khuth\OneDrive\Documents\Site\WebApplication2\FleetDBDataSet.xsd</rd:SchemaPath>
         <rd:TableName>VehicleService</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -693,8 +693,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>FleetDBDataSet_</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\khuth\OneDrive\Documents\Site\WebApplication2\FleetDBDataSet_.xsd</rd:SchemaPath>
+        <rd:DataSetName>FleetDBDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\khuth\OneDrive\Documents\Site\WebApplication2\FleetDBDataSet.xsd</rd:SchemaPath>
         <rd:TableName>CompanyInfo</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

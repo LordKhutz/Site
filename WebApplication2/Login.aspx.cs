@@ -21,6 +21,7 @@ namespace WebApplication2
         }
         private bool isValid()
         {
+            Session["rpt"] = "";
             if (txtPassCode.Text.Length < 6)
             {
                 txtPassCode.Text = "";

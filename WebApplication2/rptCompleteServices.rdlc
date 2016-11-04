@@ -511,7 +511,7 @@
         <Top>1.29646cm</Top>
         <Left>1.42557cm</Left>
         <Height>1.2cm</Height>
-        <Width>17.81807cm</Width>
+        <Width>17.81805cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -570,7 +570,7 @@
         </Style>
       </Line>
     </ReportItems>
-    <Height>2.30653in</Height>
+    <Height>2.30654in</Height>
     <Style />
   </Body>
   <Width>8.32546in</Width>
@@ -851,7 +851,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>483229f3-5e45-461d-aff1-f8a5ce34eb79</rd:DataSourceID>
+      <rd:DataSourceID>27aadb26-df9b-4218-8cfc-c680d5dafba4</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -895,8 +895,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>FleetDBDataSet_</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\khuth\OneDrive\Documents\Site\WebApplication2\FleetDBDataSet_.xsd</rd:SchemaPath>
+        <rd:DataSetName>FleetDBDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\khuth\OneDrive\Documents\Site\WebApplication2\FleetDBDataSet.xsd</rd:SchemaPath>
         <rd:TableName>VehicleService</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -931,8 +931,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>FleetDBDataSet_</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\khuth\OneDrive\Documents\Site\WebApplication2\FleetDBDataSet_.xsd</rd:SchemaPath>
+        <rd:DataSetName>FleetDBDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\khuth\OneDrive\Documents\Site\WebApplication2\FleetDBDataSet.xsd</rd:SchemaPath>
         <rd:TableName>CompanyInfo</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

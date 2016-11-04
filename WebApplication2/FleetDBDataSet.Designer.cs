@@ -532,6 +532,8 @@ namespace WebApplication2 {
             
             private global::System.Data.DataColumn columnemailAddress;
             
+            private global::System.Data.DataColumn columnLogo;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public CompanyInfoDataTable() {
@@ -599,6 +601,14 @@ namespace WebApplication2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LogoColumn {
+                get {
+                    return this.columnLogo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -634,13 +644,14 @@ namespace WebApplication2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CompanyInfoRow AddCompanyInfoRow(string CompName, string Tel, string Address, string emailAddress) {
+            public CompanyInfoRow AddCompanyInfoRow(string CompName, string Tel, string Address, string emailAddress, byte[] Logo) {
                 CompanyInfoRow rowCompanyInfoRow = ((CompanyInfoRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         CompName,
                         Tel,
                         Address,
-                        emailAddress};
+                        emailAddress,
+                        Logo};
                 rowCompanyInfoRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCompanyInfoRow);
                 return rowCompanyInfoRow;
@@ -667,6 +678,7 @@ namespace WebApplication2 {
                 this.columnTel = base.Columns["Tel"];
                 this.columnAddress = base.Columns["Address"];
                 this.columnemailAddress = base.Columns["emailAddress"];
+                this.columnLogo = base.Columns["Logo"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -680,6 +692,8 @@ namespace WebApplication2 {
                 base.Columns.Add(this.columnAddress);
                 this.columnemailAddress = new global::System.Data.DataColumn("emailAddress", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnemailAddress);
+                this.columnLogo = new global::System.Data.DataColumn("Logo", typeof(byte[]), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLogo);
                 this.columnCompName.MaxLength = 255;
                 this.columnTel.MaxLength = 10;
                 this.columnAddress.MaxLength = 255;
@@ -2632,7 +2646,7 @@ namespace WebApplication2 {
             
             private global::System.Data.DataColumn columnserviceCode;
             
-            private global::System.Data.DataColumn columnserviceDescription;
+            private global::System.Data.DataColumn columnserviceType;
             
             private global::System.Data.DataColumn columnserviceDetails;
             
@@ -2689,9 +2703,9 @@ namespace WebApplication2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn serviceDescriptionColumn {
+            public global::System.Data.DataColumn serviceTypeColumn {
                 get {
-                    return this.columnserviceDescription;
+                    return this.columnserviceType;
                 }
             }
             
@@ -2780,11 +2794,11 @@ namespace WebApplication2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public VehicleServiceRow AddVehicleServiceRow(string serviceCode, string serviceDescription, string serviceDetails, string serviceCost, EmployeesRow parentEmployeesRowByEmployeesVehicleService, VehiclesRow parentVehiclesRowByVehiclesVehicleService, string status, System.DateTime serviceTime) {
+            public VehicleServiceRow AddVehicleServiceRow(string serviceCode, string serviceType, string serviceDetails, string serviceCost, EmployeesRow parentEmployeesRowByEmployeesVehicleService, VehiclesRow parentVehiclesRowByVehiclesVehicleService, string status, System.DateTime serviceTime) {
                 VehicleServiceRow rowVehicleServiceRow = ((VehicleServiceRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         serviceCode,
-                        serviceDescription,
+                        serviceType,
                         serviceDetails,
                         serviceCost,
                         null,
@@ -2827,7 +2841,7 @@ namespace WebApplication2 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
                 this.columnserviceCode = base.Columns["serviceCode"];
-                this.columnserviceDescription = base.Columns["serviceDescription"];
+                this.columnserviceType = base.Columns["serviceType"];
                 this.columnserviceDetails = base.Columns["serviceDetails"];
                 this.columnserviceCost = base.Columns["serviceCost"];
                 this.columnmachenicID = base.Columns["machenicID"];
@@ -2841,8 +2855,8 @@ namespace WebApplication2 {
             private void InitClass() {
                 this.columnserviceCode = new global::System.Data.DataColumn("serviceCode", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnserviceCode);
-                this.columnserviceDescription = new global::System.Data.DataColumn("serviceDescription", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnserviceDescription);
+                this.columnserviceType = new global::System.Data.DataColumn("serviceType", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnserviceType);
                 this.columnserviceDetails = new global::System.Data.DataColumn("serviceDetails", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnserviceDetails);
                 this.columnserviceCost = new global::System.Data.DataColumn("serviceCost", typeof(string), null, global::System.Data.MappingType.Element);
@@ -2860,7 +2874,7 @@ namespace WebApplication2 {
                 this.columnserviceCode.AllowDBNull = false;
                 this.columnserviceCode.Unique = true;
                 this.columnserviceCode.MaxLength = 10;
-                this.columnserviceDescription.MaxLength = 60;
+                this.columnserviceType.MaxLength = 60;
                 this.columnserviceDetails.MaxLength = 255;
                 this.columnserviceCost.MaxLength = 255;
                 this.columnvehicleID.MaxLength = 255;
@@ -3071,6 +3085,22 @@ namespace WebApplication2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public byte[] Logo {
+                get {
+                    try {
+                        return ((byte[])(this[this.tableCompanyInfo.LogoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Logo\' in table \'CompanyInfo\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCompanyInfo.LogoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsCompNameNull() {
                 return this.IsNull(this.tableCompanyInfo.CompNameColumn);
             }
@@ -3115,6 +3145,18 @@ namespace WebApplication2 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetemailAddressNull() {
                 this[this.tableCompanyInfo.emailAddressColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLogoNull() {
+                return this.IsNull(this.tableCompanyInfo.LogoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLogoNull() {
+                this[this.tableCompanyInfo.LogoColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -4315,17 +4357,17 @@ namespace WebApplication2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string serviceDescription {
+            public string serviceType {
                 get {
                     try {
-                        return ((string)(this[this.tableVehicleService.serviceDescriptionColumn]));
+                        return ((string)(this[this.tableVehicleService.serviceTypeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'serviceDescription\' in table \'VehicleService\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'serviceType\' in table \'VehicleService\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableVehicleService.serviceDescriptionColumn] = value;
+                    this[this.tableVehicleService.serviceTypeColumn] = value;
                 }
             }
             
@@ -4449,14 +4491,14 @@ namespace WebApplication2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsserviceDescriptionNull() {
-                return this.IsNull(this.tableVehicleService.serviceDescriptionColumn);
+            public bool IsserviceTypeNull() {
+                return this.IsNull(this.tableVehicleService.serviceTypeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetserviceDescriptionNull() {
-                this[this.tableVehicleService.serviceDescriptionColumn] = global::System.Convert.DBNull;
+            public void SetserviceTypeNull() {
+                this[this.tableVehicleService.serviceTypeColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4899,16 +4941,18 @@ namespace WebApplication2.FleetDBDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Tel", "Tel");
             tableMapping.ColumnMappings.Add("Address", "Address");
             tableMapping.ColumnMappings.Add("emailAddress", "emailAddress");
+            tableMapping.ColumnMappings.Add("Logo", "Logo");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `CompanyInfo` (`CompName`, `Tel`, `Address`, `emailAddress`) VALUES (" +
-                "?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `CompanyInfo` (`CompName`, `Tel`, `Address`, `emailAddress`, `Logo`) " +
+                "VALUES (?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("CompName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CompName", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Tel", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Tel", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Address", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Address", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("emailAddress", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "emailAddress", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Logo", global::System.Data.OleDb.OleDbType.LongVarBinary, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Logo", global::System.Data.DataRowVersion.Current, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4924,7 +4968,7 @@ namespace WebApplication2.FleetDBDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT CompName, Tel, Address, emailAddress FROM CompanyInfo";
+            this._commandCollection[0].CommandText = "SELECT CompName, Tel, Address, emailAddress, Logo FROM CompanyInfo";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -4985,7 +5029,7 @@ namespace WebApplication2.FleetDBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string CompName, string Tel, string Address, string emailAddress) {
+        public virtual int Insert(string CompName, string Tel, string Address, string emailAddress, byte[] Logo) {
             if ((CompName == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -5009,6 +5053,12 @@ namespace WebApplication2.FleetDBDataSetTableAdapters {
             }
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = ((string)(emailAddress));
+            }
+            if ((Logo == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((byte[])(Logo));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -7069,7 +7119,7 @@ namespace WebApplication2.FleetDBDataSetTableAdapters {
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "VehicleService";
             tableMapping.ColumnMappings.Add("serviceCode", "serviceCode");
-            tableMapping.ColumnMappings.Add("serviceDescription", "serviceDescription");
+            tableMapping.ColumnMappings.Add("serviceType", "serviceType");
             tableMapping.ColumnMappings.Add("serviceDetails", "serviceDetails");
             tableMapping.ColumnMappings.Add("serviceCost", "serviceCost");
             tableMapping.ColumnMappings.Add("machenicID", "machenicID");
@@ -7084,12 +7134,12 @@ namespace WebApplication2.FleetDBDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_serviceCode", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "serviceCode", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `VehicleService` (`serviceCode`, `serviceDescription`, `serviceDetail" +
-                "s`, `serviceCost`, `machenicID`, `vehicleID`, `status`, `serviceTime`) VALUES (?" +
-                ", ?, ?, ?, ?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `VehicleService` (`serviceCode`, `serviceType`, `serviceDetails`, `se" +
+                "rviceCost`, `machenicID`, `vehicleID`, `status`, `serviceTime`) VALUES (?, ?, ?," +
+                " ?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("serviceCode", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "serviceCode", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("serviceDescription", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "serviceDescription", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("serviceType", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "serviceType", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("serviceDetails", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "serviceDetails", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("serviceCost", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "serviceCost", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("machenicID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "machenicID", global::System.Data.DataRowVersion.Current, false, null));
@@ -7098,12 +7148,12 @@ namespace WebApplication2.FleetDBDataSetTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("serviceTime", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "serviceTime", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE `VehicleService` SET `serviceCode` = ?, `serviceDescription` = ?, `service" +
-                "Details` = ?, `serviceCost` = ?, `machenicID` = ?, `vehicleID` = ?, `status` = ?" +
-                ", `serviceTime` = ? WHERE ((`serviceCode` = ?))";
+            this._adapter.UpdateCommand.CommandText = "UPDATE `VehicleService` SET `serviceCode` = ?, `serviceType` = ?, `serviceDetails" +
+                "` = ?, `serviceCost` = ?, `machenicID` = ?, `vehicleID` = ?, `status` = ?, `serv" +
+                "iceTime` = ? WHERE ((`serviceCode` = ?))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("serviceCode", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "serviceCode", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("serviceDescription", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "serviceDescription", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("serviceType", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "serviceType", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("serviceDetails", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "serviceDetails", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("serviceCost", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "serviceCost", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("machenicID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "machenicID", global::System.Data.DataRowVersion.Current, false, null));
@@ -7126,8 +7176,8 @@ namespace WebApplication2.FleetDBDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT serviceCode, serviceDescription, serviceDetails, serviceCost, machenicID, " +
-                "vehicleID, status, serviceTime FROM VehicleService";
+            this._commandCollection[0].CommandText = "SELECT serviceCode, serviceType, serviceDetails, serviceCost, machenicID, vehicle" +
+                "ID, status, serviceTime FROM VehicleService";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -7215,18 +7265,18 @@ namespace WebApplication2.FleetDBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string serviceCode, string serviceDescription, string serviceDetails, string serviceCost, global::System.Nullable<int> machenicID, string vehicleID, string status, global::System.Nullable<global::System.DateTime> serviceTime) {
+        public virtual int Insert(string serviceCode, string serviceType, string serviceDetails, string serviceCost, global::System.Nullable<int> machenicID, string vehicleID, string status, global::System.Nullable<global::System.DateTime> serviceTime) {
             if ((serviceCode == null)) {
                 throw new global::System.ArgumentNullException("serviceCode");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(serviceCode));
             }
-            if ((serviceDescription == null)) {
+            if ((serviceType == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(serviceDescription));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(serviceType));
             }
             if ((serviceDetails == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
@@ -7284,18 +7334,18 @@ namespace WebApplication2.FleetDBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string serviceCode, string serviceDescription, string serviceDetails, string serviceCost, global::System.Nullable<int> machenicID, string vehicleID, string status, global::System.Nullable<global::System.DateTime> serviceTime, string Original_serviceCode) {
+        public virtual int Update(string serviceCode, string serviceType, string serviceDetails, string serviceCost, global::System.Nullable<int> machenicID, string vehicleID, string status, global::System.Nullable<global::System.DateTime> serviceTime, string Original_serviceCode) {
             if ((serviceCode == null)) {
                 throw new global::System.ArgumentNullException("serviceCode");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(serviceCode));
             }
-            if ((serviceDescription == null)) {
+            if ((serviceType == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(serviceDescription));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(serviceType));
             }
             if ((serviceDetails == null)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
@@ -7359,8 +7409,8 @@ namespace WebApplication2.FleetDBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string serviceDescription, string serviceDetails, string serviceCost, global::System.Nullable<int> machenicID, string vehicleID, string status, global::System.Nullable<global::System.DateTime> serviceTime, string Original_serviceCode) {
-            return this.Update(Original_serviceCode, serviceDescription, serviceDetails, serviceCost, machenicID, vehicleID, status, serviceTime, Original_serviceCode);
+        public virtual int Update(string serviceType, string serviceDetails, string serviceCost, global::System.Nullable<int> machenicID, string vehicleID, string status, global::System.Nullable<global::System.DateTime> serviceTime, string Original_serviceCode) {
+            return this.Update(Original_serviceCode, serviceType, serviceDetails, serviceCost, machenicID, vehicleID, status, serviceTime, Original_serviceCode);
         }
     }
     

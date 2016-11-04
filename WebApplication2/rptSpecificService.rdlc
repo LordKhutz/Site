@@ -2,18 +2,18 @@
 <Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="FleetDBDataSet_">
+    <DataSource Name="FleetDBDataSet">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>ca12fde3-39d3-48df-a99b-98ce73f444bd</rd:DataSourceID>
+      <rd:DataSourceID>91f13fd5-a0f3-4eeb-bc0e-4c5192a50fc5</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>FleetDBDataSet_</DataSourceName>
+        <DataSourceName>FleetDBDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -51,8 +51,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>FleetDBDataSet_</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\khuth\OneDrive\Documents\Site\WebApplication2\FleetDBDataSet_.xsd</rd:SchemaPath>
+        <rd:DataSetName>FleetDBDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\khuth\OneDrive\Documents\Site\WebApplication2\FleetDBDataSet.xsd</rd:SchemaPath>
         <rd:TableName>VehicleService</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -61,7 +61,7 @@
     </DataSet>
     <DataSet Name="DataSet2">
       <Query>
-        <DataSourceName>FleetDBDataSet_</DataSourceName>
+        <DataSourceName>FleetDBDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -87,8 +87,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>FleetDBDataSet_</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\khuth\OneDrive\Documents\Site\WebApplication2\FleetDBDataSet_.xsd</rd:SchemaPath>
+        <rd:DataSetName>FleetDBDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\khuth\OneDrive\Documents\Site\WebApplication2\FleetDBDataSet.xsd</rd:SchemaPath>
         <rd:TableName>CompanyInfo</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -417,7 +417,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>

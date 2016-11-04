@@ -13,5 +13,10 @@ namespace WebApplication2
         {
 
         }
+
+        protected void ObjectDataSource4_Selecting(object sender, ObjectDataSourceSelectingEventArgs e)
+        {
+
+        }
     }
 }
