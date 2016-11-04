@@ -246,6 +246,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -466,7 +467,7 @@
                             <FilterExpression>=Fields!EmployeeID.Value</FilterExpression>
                             <Operator>Equal</Operator>
                             <FilterValues>
-                              <FilterValue>=Parameters!ReportParameter1.Value</FilterValue>
+                              <FilterValue>=Parameters!param1.Value</FilterValue>
                             </FilterValues>
                           </Filter>
                         </Filters>

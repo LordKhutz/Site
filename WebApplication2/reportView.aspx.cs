@@ -10,6 +10,10 @@ namespace WebApplication2
         {
             if (Session["rpt"].ToString() == "TimeSheet")
             {
+                FleetDBDataSet myData = new FleetDBDataSet();
+                ReportViewer7.LocalReport.DataSources.Add(new ReportDataSource("FleetDBDataSet", myData));
+                ///ReportViewer7.ReportRefresh();
+
                 ReportParameterCollection reportParameters = new ReportParameterCollection();
                 reportParameters.Add(new ReportParameter("param1", Session["rvar"].ToString()));
                 ReportViewer7.LocalReport.SetParameters(reportParameters);
