@@ -9,5 +9,12 @@ namespace WebApplication2
         {
             Session["rpt"] = "TimeSheet";
         }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            string emp = GridView1.DataKeys[GridView1.SelectedIndex].Values[1].ToString();
+            Session["rvar"] = emp;
+            Response.Redirect("reportView.aspx");
+        }
     }
 }

@@ -2,10 +2,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron" style="font-size: 100%;">
             <a href="addEmployees.aspx" style="text-align: right;">New Employee</a> | 
-            <a href="reportView.aspx" style="text-align: right;">Employee Time-Sheets</a>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="ID" DataSourceID="AccessDataSource1" EmptyDataText="There are no data records to display." ForeColor="Black" GridLines="Horizontal" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px">
+            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Employee Time-Sheets</asp:LinkButton>
+            </a>
+            &nbsp;|
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/timeSheet.aspx">New Entry</asp:HyperLink>
+&nbsp;<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="ID" DataSourceID="AccessDataSource1" EmptyDataText="There are no data records to display." ForeColor="Black" GridLines="Horizontal" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px">
                 <Columns>
-                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
                     <asp:BoundField DataField="userType" HeaderText="Position" SortExpression="userType" />
                     <asp:BoundField DataField="empName" HeaderText="Name" SortExpression="empName" />
                     <asp:BoundField DataField="surname" HeaderText="Surname" SortExpression="surname" />
