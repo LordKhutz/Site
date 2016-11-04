@@ -7,7 +7,7 @@ namespace LibSite
 {
     public class clsUserManagement:clsDB
     {
-        private string _name, _surname;
+        private string _name, _surname, _userName;
         public string name
         {
             get { return _name; }
@@ -42,12 +42,12 @@ namespace LibSite
         //change password, only accessible to the currently logged on Manager.
         public void changePassKey(string passKey)
         {
-            command.Parameters.Add("@UserName", OleDbType.VarChar);
             command.Parameters.Add("@PassKey", OleDbType.VarChar);
-            command.Parameters["@UserName"].Value = "khuthadzotshikotshi@gmail.com";
+            command.Parameters.Add("@UserName", OleDbType.VarChar);
             command.Parameters["@PassKey"].Value = passKey;
-            Query = "UPDATE Managers SET passKey=@PassKey WHERE (userName=@UserName);";
-            db_select();
+            command.Parameters["@UserName"].Value = userName;
+            Query = "UPDATE Managers SET passKey=@PassKey WHERE userName= @UserName;";
+            db_non_returning_query();
         }
         //only accessible to the office Manager
         //add a new employee to the system.

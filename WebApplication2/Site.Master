@@ -55,7 +55,7 @@
                         <a class="navbar-brand" runat="server" href="Login.aspx"><%: Session["AppName"].ToString()+ " Manager"  %>!</a>
                     <%} %>
                 </div>
-                <div class="navbar-collapse collapse">
+                <div class="navbar-collapse collapse" style="font-size:80%;">
                     <% if (Session["Email"].ToString() != "")
                                     {%>
                     <ul class="nav navbar-nav">
