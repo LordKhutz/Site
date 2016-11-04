@@ -62,6 +62,7 @@
                         <li><a runat="server" href="UserManagement.aspx">User Management</a></li>
                         <li><a runat="server" href="VehicleInfo">Vehicle Management</a></li>
                         <li><a runat="server" href="ManageEmployees.aspx">Manage Employees</a></li>
+                        <li><a runat="server" href="VehicleService.aspx">Vehicle Service</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
                     </ul>

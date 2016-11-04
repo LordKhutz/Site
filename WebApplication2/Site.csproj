@@ -189,6 +189,7 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="VehicleInfo.aspx" />
+    <Content Include="VehicleService.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -321,6 +322,13 @@
     </Compile>
     <Compile Include="VehicleInfo.aspx.designer.cs">
       <DependentUpon>VehicleInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleService.aspx.cs">
+      <DependentUpon>VehicleService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VehicleService.aspx.designer.cs">
+      <DependentUpon>VehicleService.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
