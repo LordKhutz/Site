@@ -12,7 +12,7 @@ namespace WebApplication2
 
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
-            string emp = GridView1.DataKeys[GridView1.SelectedIndex].Values[1].ToString();
+            string emp = GridView1.Rows[GridView1.SelectedIndex].Cells[1].Text;
             Session["rvar"] = emp;
             Response.Redirect("reportView.aspx");
         }

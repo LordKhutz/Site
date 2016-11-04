@@ -11,15 +11,20 @@ namespace WebApplication2
             if (Session["rpt"].ToString() == "TimeSheet")
             {
                 FleetDBDataSet myData = new FleetDBDataSet();
-                ReportViewer7.LocalReport.DataSources.Add(new ReportDataSource("FleetDBDataSet", myData));
-                ///ReportViewer7.ReportRefresh();
+                ReportViewer7.LocalReport.DataSources.Add(new ReportDataSource("DataSet3", myData.Tables["CompanyInfo"]));
+                ReportViewer7.LocalReport.DataSources.Add(new ReportDataSource("DataSet2", myData.Tables["TimeSheet"]));
+                ReportViewer7.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", myData.Tables["Employees"]));
 
                 ReportParameterCollection reportParameters = new ReportParameterCollection();
                 reportParameters.Add(new ReportParameter("param1", Session["rvar"].ToString()));
                 ReportViewer7.LocalReport.SetParameters(reportParameters);
             }
+            ///report currently not accessible due to missing webpage.
             if (Session["rpt"].ToString() == "SpecificService")
             {
+                FleetDBDataSet myData = new FleetDBDataSet();
+                ReportViewer7.LocalReport.DataSources.Add(new ReportDataSource("DataSet2", myData.Tables["CompanyInfo"]));
+                ReportViewer7.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", myData.Tables["VehicleService"]));
                 ReportParameterCollection reportParameters = new ReportParameterCollection();
                 reportParameters.Add(new ReportParameter("param1", Session["rvar"].ToString()));
                 ReportViewer6.LocalReport.SetParameters(reportParameters);
