@@ -7,7 +7,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>8edf682a-d110-4a9a-95f2-c36e83b79ebc</rd:DataSourceID>
+      <rd:DataSourceID>2cdbe18d-5e22-48f0-9745-971a31c9a8f2</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -45,7 +45,7 @@
     </DataSet>
     <DataSet Name="DataSet2">
       <Query>
-        <DataSourceName>FleetDBDataSet_</DataSourceName>
+        <DataSourceName>FleetDBDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -75,8 +75,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>FleetDBDataSet_</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\khuth\OneDrive\Documents\Site\WebApplication2\FleetDBDataSet_.xsd</rd:SchemaPath>
+        <rd:DataSetName>FleetDBDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\khuth\OneDrive\Documents\Site\WebApplication2\FleetDBDataSet.xsd</rd:SchemaPath>
         <rd:TableName>Employees</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
