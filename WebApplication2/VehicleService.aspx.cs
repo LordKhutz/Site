@@ -16,9 +16,10 @@ namespace WebApplication2
 
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
-            if (GridView1.Rows.Count > 0)
+            if (DetailsView1.DataItemCount > 0 )
             {
-                string emp = GridView1.Rows[GridView1.SelectedIndex].Cells[0].Text;
+                string emp;
+                emp = DetailsView1.DataKey.ToString();
                 Session["rvar"] = emp;
                 Response.Redirect("reportView.aspx");
             }
