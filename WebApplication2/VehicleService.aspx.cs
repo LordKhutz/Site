@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace WebApplication2
 {
@@ -16,10 +11,9 @@ namespace WebApplication2
 
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
-            if (DetailsView1.DataItemCount > 0 )
+            if (DetailsView1.DataItemCount > 0)
             {
-                string emp;
-                emp = DetailsView1.DataKey.ToString();
+                string emp = DetailsView1.DataKey.ToString();
                 Session["rvar"] = emp;
                 Response.Redirect("reportView.aspx");
             }

@@ -2,6 +2,5 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
-    <h3>Your application description page.</h3>
-    <p>Use this area to provide additional information.</p>
+    <h3><%: Session["AppName"].ToString() %>, digitaly manages the company and keeps company records</h3>
 </asp:Content>
