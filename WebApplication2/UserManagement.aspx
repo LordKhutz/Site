@@ -13,7 +13,7 @@
                 <asp:BoundField DataField="surname" HeaderText="Surname" SortExpression="surname" />
                 <asp:BoundField DataField="address" HeaderText="Home Address" SortExpression="address" />
                 <asp:BoundField DataField="userName" HeaderText="Email Address" SortExpression="userName" />
-                <asp:BoundField DataField="passKey" HeaderText="Password" ReadOnly="True" SortExpression="passKey" InsertVisible="False" />
+                <asp:BoundField DataField="passKey" HeaderText="Password" SortExpression="passKey" />
                 <asp:BoundField DataField="phnumber" HeaderText="Phone Number" SortExpression="phnumber" />
             </Columns>
             <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
