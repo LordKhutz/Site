@@ -68,7 +68,7 @@
                     </ul>
                     <div style="float:right">
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="ChangePass" title="Manage your account">Hello, <%: Session["user"].ToString()  %>!</a></li>
+                                <li>Hello, <%: Session["user"].ToString()  %>!</li>
                                 <li><a href="Login.aspx">Log out</a></li> 
                             </ul>
                         </div>
