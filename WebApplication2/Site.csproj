@@ -132,7 +132,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="ChangePass.aspx" />
     <Content Include="FleetDBDataSet.xsc">
       <DependentUpon>FleetDBDataSet.xsd</DependentUpon>
     </Content>
@@ -332,13 +331,6 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="ChangePass.aspx.cs">
-      <DependentUpon>ChangePass.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ChangePass.aspx.designer.cs">
-      <DependentUpon>ChangePass.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
