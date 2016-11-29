@@ -21,7 +21,7 @@ namespace WebApplication2
             {
                 string emp = GridView1.Rows[GridView1.SelectedIndex].Cells[1].Text;
                 Session["rvar"] = emp;
-                Response.Redirect("reportView.aspx");
+                Response.Redirect("TimeSheetrpt.aspx");
             }
         }
     }

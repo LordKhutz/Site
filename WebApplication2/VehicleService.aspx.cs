@@ -15,7 +15,7 @@ namespace WebApplication2
             {
                 string emp = DetailsView1.DataKey.ToString();
                 Session["rvar"] = emp;
-                Response.Redirect("reportView.aspx");
+                Response.Redirect("SpecificServicerpt.aspx");
             }
         }
     }

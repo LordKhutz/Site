@@ -198,6 +198,8 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="TimeSheetrpt.aspx" />
+    <Content Include="SpecificServicerpt.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="addManager.aspx.cs">
@@ -331,6 +333,18 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheetrpt.aspx.cs">
+      <DependentUpon>TimeSheetrpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheetrpt.aspx.designer.cs">
+      <DependentUpon>TimeSheetrpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SpecificServicerpt.aspx.cs">
+      <DependentUpon>SpecificServicerpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SpecificServicerpt.aspx.designer.cs">
+      <DependentUpon>SpecificServicerpt.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

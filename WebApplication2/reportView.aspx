@@ -249,13 +249,6 @@
         </rsweb:ReportViewer>
     <%} %>
         <br />
-    <%if (val == "TimeSheet")
-        {%>
-        <rsweb:ReportViewer ID="ReportViewer7" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Width="1083px" Height="676px">
-            <LocalReport ReportPath="rptTimeSheet.rdlc">
-            </LocalReport>
-        </rsweb:ReportViewer>
-    <%} %>
     <%if (val == "VehicleInfo")
         {%>
         <rsweb:ReportViewer ID="ReportViewer8" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Width="1083px" Height="676px">
